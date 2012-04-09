@@ -9,9 +9,8 @@ define([
     routes: {
       // Pages
       '/know': 'know',	
-      '/optimize': 'optimize',
-      '/backbone/:section': 'backbone',
-      '/backbone': 'backbone',
+      '/made': 'made',
+      '/worked': 'worked',
       '/manager': 'manager',
     
       // Default - catch all
@@ -22,10 +21,10 @@ define([
   var initialize = function(options){
 		var appView = options.appView;
     var router = new AppRouter(options);
-		router.on('route:optimize', function () {
-			require(['views/optimize/page'], function (OptimizePage) {
-				var optimizePage = Vm.create(appView, 'OptimizePage', OptimizePage);
-				optimizePage.render();
+		router.on('route:made', function () {
+			require(['views/made/page'], function (MadePage) {
+				var madePage = Vm.create(appView, 'MadePage', MadePage);
+				madePage.render();
 			});
 		});
 		router.on('route:defaultAction', function (actions) {
@@ -40,10 +39,10 @@ define([
         knowPage.render();
       });	  	
 		});
-		router.on('route:backbone', function (section) {
-      require(['views/backbone/page'], function (BackbonePage) {
-        var backbonePage = Vm.create(appView, 'BackbonePage', BackbonePage, {section: section});
-        backbonePage.render();
+		router.on('route:worked', function (section) {
+      require(['views/worked/page'], function (WorkedPage) {
+        var workedPage = Vm.create(appView, 'WorkedPage', WorkedPage);
+        workedPage.render();
       });
 		});
 		router.on('route:manager', function () {
