@@ -3,7 +3,7 @@ define([
   'underscore',
   'backbone',
 	'vm',
-  'text!templates/Worked/page.html',
+  'text!templates/worked/page.html',
 ], function($, _, Backbone, Vm, WorkedPageTemplate, SidemenuView, SectionView){
   var WorkedPage = Backbone.View.extend({
     el: '.page',
