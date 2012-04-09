@@ -8,7 +8,7 @@ define([
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Pages
-      '/modules': 'modules',	
+      '/know': 'know',	
       '/optimize': 'optimize',
       '/backbone/:section': 'backbone',
       '/backbone': 'backbone',
@@ -34,10 +34,10 @@ define([
         dashboardPage.render();
       });
 		});
-		router.on('route:modules', function () {
-	   require(['views/modules/page'], function (ModulePage) {
-        var modulePage = Vm.create(appView, 'ModulesPage', ModulePage);
-        modulePage.render();
+		router.on('route:know', function () {
+	   require(['views/know/page'], function (KnowPage) {
+        var knowPage = Vm.create(appView, 'KnowPage', KnowPage);
+        knowPage.render();
       });	  	
 		});
 		router.on('route:backbone', function (section) {
