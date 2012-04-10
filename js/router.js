@@ -11,7 +11,7 @@ define([
       '/know': 'know',	
       '/made': 'made',
       '/worked': 'worked',
-      '/manager': 'manager',
+      '/want': 'want',
     
       // Default - catch all
       '*actions': 'defaultAction'
@@ -45,10 +45,10 @@ define([
         workedPage.render();
       });
 		});
-		router.on('route:manager', function () {
-			require(['views/manager/page'], function (ManagerPage) {
-				var managerPage = Vm.create(appView, 'ManagerPage', ManagerPage);
-				managerPage.render();
+		router.on('route:want', function () {
+			require(['views/want/page'], function (WantPage) {
+				var wantPage = Vm.create(appView, 'WantPage', WantPage);
+				wantPage.render();
 			});
 		});
     Backbone.history.start();

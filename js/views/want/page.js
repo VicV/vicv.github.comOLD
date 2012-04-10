@@ -3,12 +3,12 @@ define([
   'underscore',
   'backbone',
 	'vm',
-  'text!templates/manager/page.html'
-], function($, _, Backbone, Vm, managerPageTemplate){
-  var ManagerPage = Backbone.View.extend({
+  'text!templates/want/page.html'
+], function($, _, Backbone, Vm, wantPageTemplate){
+  var WantPage = Backbone.View.extend({
     el: '.page',
     render: function () {
-      this.$el.html(managerPageTemplate);
+      this.$el.html(wantPageTemplate);
     },
 		events: {
 		  'click .add-view': 'addView'
@@ -21,5 +21,5 @@ define([
 			return false;
 		}
   });
-  return ManagerPage;
+  return WantPage;
 });
