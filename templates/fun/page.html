@@ -54,7 +54,7 @@ var page = 1;
 
 function flickr(callback)
 {
-    var url = "http://api.flickr.com/services/rest/?method=flickr.PhotoSets.getPhotos&api_key=de47da20645a11adabe1c288310190a5&&photoset_id=72157629857286809&per_page=21&extras=url_o,url_m,url_s,owner_name&page=" + page + "&format=json&jsoncallback=?";
+    var url = "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=de47da20645a11adabe1c288310190a5&&photoset_id=72157629857286809&per_page=21&extras=url_o,url_m,url_s,owner_name&page=" + page + "&format=json&jsoncallback=?";
     
         jQuery.getJSON(url, function(data) 
         {
