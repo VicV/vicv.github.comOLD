@@ -57,7 +57,7 @@ function flickr(callback)
     
         jQuery.getJSON(url, function(data) 
         {
-        var images = jQuery.map(data.photos.photo, function (item)
+        var images = jQuery.map(data.photoset.photo, function (item)
         {
             /* return item.url_s; */
             return {
