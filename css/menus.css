@@ -14,17 +14,7 @@
   float: right;
 }
 
-a.active {
-  color: #CBE2F3;
-  text-decoration: none;
-} 
-a.link {
-	color: #ffffff;
-}
-a.visited {
-	color:#ffffff;
-}
-a:link {color:#FF0000;}    /* unvisited link */
-a:visited {color:#00FF00;} /* visited link */
+a:link {color:#ffffff;}    /* unvisited link */
+a:visited {color:#ffffff;} /* visited link */
 a:hover {color:#FF00FF;}   /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
+a:active {color:#ffffff;}  /* selected link */
