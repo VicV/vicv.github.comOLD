@@ -2,6 +2,8 @@
 
 ## To begin:
 
+This is here to help anyone trying to understand the backbone boilerplate. By Victor Vucicevich
+
 It doesn't make much sense, but I will try to help as much as I can, because the tutorials and comments aren't much help at all. 
 
 It won't help much that this document will become irrelevant to the actual application it is for, so as a starting point, download the backbone boilerplate from here: `http://backboneboilerplate.com/`
@@ -25,12 +27,7 @@ Then, we get to the actual start of the application:
 At the start of nearly every .js file now, you'll see the `define(` area. It includes all of the libraries defined in the `main.js` file, and then points the current page to a specific .HTML file (or whatever kind of file you want).
 
 This is the `text!templates/layout.html`
-This loads that specific html into view. In this case, the `layout.html` file has a lot of divs I don't understand (sorry).
-
-> **Note from Rob:** So the divs: There's not too much to them, it's basically just
-> breaking the page into a standard header/content/footer layout. The "clear" 
-> property of the styles just ensures that any floating (eg `float:left` in css) done in 
-> each of those sections doesn't carry over into the next.
+This loads that specific html into view. In this case, the `layout.html`.
 
 This is why there is a `boilerplate.js` file in the `/js` directory. Use that to start any .js file, because it has all of these definitions in it for you already.
 
