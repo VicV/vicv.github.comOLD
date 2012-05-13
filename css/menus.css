@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-    color:#ffffff;
+  color:#ffffff;
 }
 .menu li {
   float: left;
@@ -18,3 +18,9 @@ a.active {
   color: #CBE2F3;
   text-decoration: none;
 } 
+a.link {
+	color: #ffffff;
+}
+a.visited {
+	color:#ffffff;
+}
