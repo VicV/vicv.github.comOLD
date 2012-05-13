@@ -1,8 +1,7 @@
 .menu {
   margin: 0;
   padding: 0;
-
-  background-color:#6495ed;
+  list-style: none;
 }
 .menu li {
   float: left;
