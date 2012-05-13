@@ -1,13 +1,12 @@
 .menu {
   margin: 0;
   padding: 0;
-  list-style: none;
+
   background-color:#6495ed;
 }
 .menu li {
   float: left;
   margin-left: 10px;
-  background-color:#6495ed;
 }
 
 .menu li.other-link {
