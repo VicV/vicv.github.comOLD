@@ -19,5 +19,5 @@
 .menu a:hover {color:#FF00FF;text-decoration:none}   
 .menu a:active {color:#ffffff;text-decoration:none}
 
-.test a:link{color:#000000};
-.test a:visited{color:#000000};
+.linkdiv a:link{color:#000000};
+.linkdiv a:visited{color:#000000};
