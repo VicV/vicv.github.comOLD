@@ -53,11 +53,11 @@ var page = 1;
 
 function flickr(callback)
 {
-    var url = "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=08401d64a821bc18051f855890717cba&photoset_id=72157629857286809&extras=url_o%2Curl_m%2Curl_s%2Cowner_name&per_page=21&format=json&page="page+"nojsoncallback=1&api_sig=49dbbbe1f52de792d44f33cda277001e;"
+    var url = "http://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=60746a125b4a901f2dbb6fc902d9a716&per_page=21&extras=url_o,url_m,url_s,owner_name&page=" + page + "&format=json&jsoncallback=?";
     
         jQuery.getJSON(url, function(data) 
         {
-        var images = jQuery.map(data.photoset.photo, function (item)
+        var images = jQuery.map(data.photos.photo, function (item)
         {
             /* return item.url_s; */
             return {
