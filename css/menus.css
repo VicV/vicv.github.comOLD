@@ -19,6 +19,5 @@ a:visited {color:#ffffff;}
 a:hover {color:#FF00FF;text-decoration:none}   
 a:active {color:#ffffff;text-decoration:none}
 
-.test {
-	color:#000000;
-}
+.test a:link{color:#000000};
+.test a:visited{color:#000000};
